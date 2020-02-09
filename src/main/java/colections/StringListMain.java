@@ -1,5 +1,6 @@
 package colections;
 
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -13,6 +14,8 @@ public class StringListMain {
         listString.add(0,"Bob");
         System.out.println(listString);
 
+        Collections.sort(listString);
+        System.out.println(listString);
 
     }
 
