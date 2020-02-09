@@ -10,6 +10,8 @@ public class StringListMain {
         List<String> listString = new LinkedList<String>();
         listString.add("George");
         listString.add("Ana");
+        listString.add("AAna");
+        listString.add("aAna");
         System.out.println(listString);
         listString.add(0,"Bob");
         System.out.println(listString);
