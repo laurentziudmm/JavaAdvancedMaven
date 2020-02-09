@@ -23,5 +23,7 @@ public class CarListMain {
         Collections.sort(cars);
         System.out.println(cars);
 
+        System.out.println(cars.contains(new Car("Masina1")));
+
     }
 }
