@@ -7,6 +7,8 @@ import java.util.List;
 public class ListMain {
     public static void main(String[] args) {
 
+        //explain ArrayList
+        //@mention
         List<Integer> listInteger = new ArrayList();
 
         listInteger.add(1);
