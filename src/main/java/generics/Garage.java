@@ -1,6 +1,9 @@
 package generics;
 
-public class Garage <T> {
+//< T > pentru a face clasa generica
+// T de la tipuri(orice litera)
+public class Garage <T extends Vehicle> {
+    //limitam garajul doar pentru vehicule
 
     private int n ;
 

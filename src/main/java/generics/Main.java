@@ -12,5 +12,8 @@ public class Main {
         Scuter scuter1 = new Scuter( "Vespa ");
         scuterGarage.addVehicle(scuter1);
         scuterGarage.showGarage();
+
+        //nu se poate implementa deoarce extinde clasa vehicle
+       // Garage<String> abc = new Garage(new String[5]);
     }
 }
