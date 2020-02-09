@@ -19,12 +19,13 @@ public class Product implements Comparable<Product>{
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Product product = (Product) o;
-        return Double.compare(product.size, size) == 0;
+        return Double.compare(product.size, size) == 0 &&
+                Objects.equals(name, product.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(size);
+        return Objects.hash(name, size);
     }
 
     public String toString() {
