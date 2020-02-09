@@ -1,8 +1,6 @@
 package products;
 
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.Set;
+import java.util.*;
 
 public class SetMain {
     public static void main(String[] args) {
@@ -15,5 +13,14 @@ public class SetMain {
         setProducts.add(new Product("Bomboana",10,14.5));
         setProducts.add(new Product("Bomboana",10,20.5));
         System.out.println(setProducts);
+        System.out.println();
+
+        List<Product> listProduct = new LinkedList<>();
+        listProduct.addAll(setProducts);
+        System.out.println(listProduct);
+        System.out.println();
+
+        Collections.sort(listProduct);
+        System.out.println(listProduct);
     }
 }
