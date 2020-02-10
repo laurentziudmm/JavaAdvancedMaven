@@ -10,6 +10,8 @@ public class ProductTest {
     @Before
     public void init() {
         product = new Product("Bomboana", 23.3, 10.0);
+        product = new Product("Apa", 2.5, 100.0);
+
     }
 
     @Test
@@ -17,13 +19,19 @@ public class ProductTest {
 
         double Price = product.getPrice();
         System.out.println("Price is " + Price);
-        }
+    }
 
     @Test
     public void getNameTest() {
 
         String name = product.getName();
         System.out.println("Poduct is " + name);
-        }
+    }
 
+    @Test
+    public void getSizeTest() {
+
+        double size = product.getSize();
+        System.out.println("Poduct is " + size);
+    }
 }
