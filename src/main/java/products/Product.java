@@ -33,6 +33,14 @@ public class Product implements Comparable<Product>{
     }
 
 
+    public String getName() {
+        return name;
+    }
+
+    public double getSize() {
+        return size;
+    }
+
     public double getPrice() {
         return price;
     }

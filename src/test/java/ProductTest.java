@@ -12,16 +12,18 @@ public class ProductTest {
         product = new Product("Bomboana", 23.3, 10.0);
     }
 
-    public int expectedResult;
-
     @Test
     public void getPriceTest() {
-        //given
-        //when
+
         double Price = product.getPrice();
         System.out.println("Price is " + Price);
-        //then
-        assert Price == expectedResult;
-    }
+        }
+
+    @Test
+    public void getNameTest() {
+
+        String name = product.getName();
+        System.out.println("Poduct is " + name);
+        }
 
 }
