@@ -38,7 +38,6 @@ public class ListMain {
          * Is it still going to work the same?
          */
 
-
         ArrayList<String> list1 = new ArrayList<>();
         list1.add("Green");
         list1.add("Red");
