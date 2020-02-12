@@ -29,7 +29,7 @@ public class Product implements Comparable<Product>{
     }
 
     public String toString() {
-        return name + " are pretul: " + price + " si are " + size;
+        return name + " are pretul: " + price + " si are marimea " + size;
     }
 
 
