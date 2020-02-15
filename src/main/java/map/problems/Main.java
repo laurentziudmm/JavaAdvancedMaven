@@ -26,10 +26,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-//        System.out.println(wordCounting(Constants.text));
+//        System.out.println(wordCounting(Constants.TEXT));
 
 
-        Map<String,Integer> newWordCount = wordCounting(Constants.text);
+        Map<String,Integer> newWordCount = wordCounting(Constants.TEXT);
         List <String>tokensList = new ArrayList(newWordCount.keySet());
         Collections.sort(tokensList,new ComparatorLength());
         Collections.reverse(tokensList);
