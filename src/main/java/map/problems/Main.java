@@ -1,19 +1,15 @@
 package map.problems;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public class Main {
 
+
+
     public static Map<String, Integer> wordCounting(String text) {
-        Map<String, Integer> wordMap = new TreeMap<>(Collections.<String>reverseOrder());
-        //TreeMap Sorteaza text ul
+        Map<String, Integer> wordMap = new HashMap<>();
+        //TreeMap Sorteaza wordMap
         String[] tokens = text.split("\\s|,\\s|\\.\\s|!|\\?|\\.");
-//        for (String token : tokens){
-//            System.out.println(token);
-//        }
 
         for (String token : tokens) {
             if (wordMap.containsKey(token)) {
@@ -27,10 +23,19 @@ public class Main {
 
     }
 
+
     public static void main(String[] args) {
 
-        System.out.println(wordCounting(Constants.text));
+//        System.out.println(wordCounting(Constants.text));
 
+
+        Map<String,Integer> newWordCount = wordCounting(Constants.text);
+        List <String>tokensList = new ArrayList(newWordCount.keySet());
+        Collections.sort(tokensList,Constants.comparatorLength);
+        Collections.reverse(tokensList);
+        for (String token : tokensList) {
+            System.out.println(token + " " + newWordCount.get(token));
+        }
 
     }
 }
