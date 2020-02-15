@@ -70,6 +70,13 @@ public class ListMain {
         for (String i : list1) {
             System.out.print(i + "\n");
         }
+        System.out.println();
+
+        for (int i = 0; i < list1.size(); i++) {
+            System.out.println(list1.get(i));
+        }
+
+        int i = list1.indexOf("Blue");
 
         System.out.println(" \nWith LinkedList We Have The Same Result");
     }

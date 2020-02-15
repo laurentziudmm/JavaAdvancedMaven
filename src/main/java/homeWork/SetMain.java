@@ -40,6 +40,9 @@ public class SetMain {
         System.out.println("Print set1 \n" + set1);
         set1.add("Yellow");
         set1.add("Green");
+
+        //valorile sunt unice si de aia nu afiseaza green de 2 ori
+
         System.out.println("Print set1 without green \n" + set1);
         System.out.println("Print the size of set1 \n" + set1.size());
         System.out.println("Print if blue is contained in set1 \n"+set1.contains("Blue"));
@@ -61,6 +64,10 @@ public class SetMain {
 
         System.out.println("\n13 ..Yes will work the same");
 
+        //13. What if instead of HashSet in above exercises we use LinkedHashSet? Is it still going to work the same?
+        //o sa compileze dar o sa ruleze diferit
+        //linked hash set este aceiasi ordine
+        //hash set
 
     }
 }
