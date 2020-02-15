@@ -23,5 +23,17 @@ public class MainCity {
         //without equals and hashcode Output = [Iasi, Iasi, Iasi]
         //with equals and hashcode Output = [Iasi]
 
+        System.out.println("Exemplu nou\n");
+        cityMap.put(new City("Iasi"),"is");
+        System.out.println(cityMap.get(new City("Iasi")));
+        System.out.println(new City("Iasi").hashCode());
+
+        cityMap.put(new City("BT"),"bt");
+        System.out.println(cityMap.get(new City("BT")));
+        cityMap.put(new City("VS"),"vs");
+        System.out.println(cityMap.get(new City("VS")));
+        cityMap.put(new City("Iasi"),"Iasi");
+        System.out.println(cityMap.get(new City("Iasi")));
+
     }
 }
