@@ -31,7 +31,7 @@ public class Main {
 
         Map<String,Integer> newWordCount = wordCounting(Constants.text);
         List <String>tokensList = new ArrayList(newWordCount.keySet());
-        Collections.sort(tokensList,Constants.comparatorLength);
+        Collections.sort(tokensList,new ComparatorLength());
         Collections.reverse(tokensList);
         for (String token : tokensList) {
             System.out.println(token + " " + newWordCount.get(token));
