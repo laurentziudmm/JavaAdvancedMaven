@@ -9,25 +9,27 @@ public class MainChecked {
 
         try {
             readFile();
-        } catch (FileNotFoundException e) {
+            createFile("sda");
+        } catch (FileNotFoundException | FileAlreadyExistsException e) {
             System.out.println(e.getMessage());
         } finally {
             System.out.println("\nFinally block");
         }
         System.out.println("\nProgramul merge mai departe");
 
-        try {
-            String s = "Ana";
-        } finally {
-            System.out.println("\nTry with error");
-        }
+//        try {
+//            String s = "Ana";
+//        } finally {
+//            System.out.println("\nTry with error");
+//        }
 
     }
 
     public static void readFile() throws FileNotFoundException {
 
-        FileReader file = new FileReader("C:\\test\\a.txt");
+//        FileReader file = new FileReader("C:\\test\\a.txt");
         FileReader file2 = new FileReader("/Users/stoicalaurentiu/Programing/Projects/JavaAdvancedMaven/text.txt");
+        System.out.println("Successfully read file text.txt");
 
     }
 
