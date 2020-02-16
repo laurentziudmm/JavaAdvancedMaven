@@ -1,6 +1,6 @@
 package exceptions;
 
-public class Main {
+public class MainUnchecked {
     public static void main(String[] args) {
 
         processString(null);
