@@ -11,7 +11,7 @@ public class MainUnchecked {
 //        displayArray(arr);
 
 //        stringToInteger();
-        division();
+//        division();
 
     }
 
@@ -19,22 +19,28 @@ public class MainUnchecked {
         if (s != null) {
             s.toString();
         }
+//        try {
+//            s.toString();
+//        } catch (NullPointerException e) {
+//            System.out.println("Asa nu..E gresit");
+//        }
+
     }
 
     public static void getChar(String s) {
         s.charAt(100);
     }
 
-    public static void displayArray (int[] arr) {
+    public static void displayArray(int[] arr) {
         System.out.println(arr[1000]);
     }
 
-    public static void stringToInteger () {
+    public static void stringToInteger() {
         String s = "FOOBAR";
         int i = Integer.parseInt(s);
     }
 
-    public static void division(){
+    public static void division() {
         int x = 0;
         int y = 10;
         int z = y / x;
