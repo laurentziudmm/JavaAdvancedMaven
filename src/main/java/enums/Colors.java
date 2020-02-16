@@ -19,4 +19,9 @@ public enum Colors {
     public Integer getTransparency() {
         return transparency;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +" "+ colorCode + " " +transparency;
+    }
 }

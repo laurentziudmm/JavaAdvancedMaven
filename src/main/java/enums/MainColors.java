@@ -13,10 +13,12 @@ public class MainColors {
         System.out.println(Colors.values());
 
         for (Colors colors1 : Colors.values()) {
-            System.out.println(colors1.name()+" "+colors1.getColorCode());
+//            System.out.println(colors1.name()+" "+colors1.getColorCode());
+            System.out.println(colors1);
         }
 
         System.out.println(Colors.valueOf("RED"));
+
 
     }
 }
