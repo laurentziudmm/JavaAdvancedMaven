@@ -10,7 +10,7 @@ public class MainColors {
 //        }
 
         System.out.println(Colors.RED.getColorCode());
-        System.out.println(Colors.values());
+//        System.out.println(Colors.values());
 
         for (Colors colors1 : Colors.values()) {
 //            System.out.println(colors1.name()+" "+colors1.getColorCode());
