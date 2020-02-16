@@ -10,8 +10,11 @@ public class MainChecked {
         try {
             readFile();
             createFile("sda");
-        } catch (FileNotFoundException | FileAlreadyExistsException e) {
-            System.out.println(e.getMessage());
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found " + e.getMessage());
+        } catch (FileAlreadyExistsException e) {
+            //daca vreau sa fac alteceva...alt nume de fisier
+            System.out.println("File already exist \n" + e.getMessage());
         } finally {
             System.out.println("\nFinally block");
         }
@@ -28,7 +31,7 @@ public class MainChecked {
     public static void readFile() throws FileNotFoundException {
 
 //        FileReader file = new FileReader("C:\\test\\a.txt");
-        FileReader file2 = new FileReader("/Users/stoicalaurentiu/Programing/Projects/JavaAdvancedMaven/text.txt");
+        FileReader file2 = new FileReader("/Users/stoicalaurentiu/Programing/Projects/JavaAdvancedMaven/text2.txt");
         System.out.println("Successfully read file text.txt");
 
     }
